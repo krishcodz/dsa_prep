@@ -153,8 +153,24 @@ void printTriangle22(int n)
 }
 int main()
 {
-    int n;
-    cin >> n;
-    printTriangle22(n);
+    // int n;
+    // cin >> n;
+    // printTriangle22(n);
+    vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    for (int i : v)
+    {
+        cout << i;
+    }
+    cout << endl;
+    v.erase(v.begin() + 1);
+    cout << "after erase:" << endl;
+    for (int i : v)
+    {
+        cout << i;
+    }
+    cout << v[1];
     return 0;
 }
